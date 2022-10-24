@@ -1,4 +1,3 @@
-# coding=utf-8
 # Description:  visualize yolo label image.
 
 import argparse
@@ -7,7 +6,6 @@ import cv2
 import numpy as np
 
 IMG_FORMATS = ["bmp", "jpg", "jpeg", "png", "tif", "tiff", "dng", "webp", "mpo"]
-IMG_FORMATS.extend([f.upper() for f in IMG_FORMATS])
 
 
 def main(args):

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 #
 # Modified by Meituan
 # 2022.6.24
@@ -110,7 +108,6 @@ def create_optimization_profiles(builder, inputs, batch_sizes=[1,8,16,32,64]):
 
     return list(profiles.values())
 
-
 def main():
     parser = argparse.ArgumentParser(description="Creates a TensorRT engine from the provided ONNX file.\n")
     parser.add_argument("--onnx", required=True, help="The ONNX model file to convert to TensorRT")
@@ -216,7 +213,6 @@ def main():
         with builder.build_engine(network, config) as engine, open(args.output, "wb") as f:
             logger.info("Serializing engine to file: {:}".format(args.output))
             f.write(engine.serialize())
-
 
 if __name__ == "__main__":
     main()

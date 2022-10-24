@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
 import os
 import shutil
 import torch
@@ -44,7 +42,6 @@ def save_checkpoint(ckpt, is_best, save_dir, model_name=""):
 
 
 def strip_optimizer(ckpt_dir, epoch):
-    """Delete optimizer from saved checkpoint file"""
     for s in ['best', 'last']:
         ckpt_path = osp.join(ckpt_dir, '{}_ckpt.pt'.format(s))
         if not osp.exists(ckpt_path):

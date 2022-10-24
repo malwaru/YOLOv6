@@ -2,7 +2,7 @@
 model = dict(
     type='YOLOv6s',
     pretrained=None,
-    scales='../yolov6_assert/v6s_v2_scale.pt',
+    scales='./assets/yolov6s_scale.pt',
     depth_multiple=0.33,
     width_multiple=0.50,
     backbone=dict(
@@ -11,7 +11,7 @@ model = dict(
         out_channels=[64, 128, 256, 512, 1024],
         ),
     neck=dict(
-        type='RepPANNeck',
+        type='RepPAN',
         num_repeats=[12, 12, 12, 12],
         out_channels=[256, 128, 128, 256, 256, 512],
         ),
@@ -19,13 +19,9 @@ model = dict(
         type='EffiDeHead',
         in_channels=[128, 256, 512],
         num_layers=3,
-        begin_indices=24,
         anchors=1,
-        out_indices=[17, 20, 23],
         strides=[8, 16, 32],
-        iou_type='giou',
-        use_dfl=False,
-        reg_max=0
+        iou_type='siou'
     )
 )
 

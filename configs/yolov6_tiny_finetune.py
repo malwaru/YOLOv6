@@ -1,9 +1,9 @@
-# YOLOv6n model
+# YOLOv6t model
 model = dict(
-    type='YOLOv6n',
-    pretrained='./weights/yolov6n.pt',
-    depth_multiple=0.33,
-    width_multiple=0.25,
+    type='YOLOv6t',
+    pretrained='./weights/yolov6t.pt',
+    depth_multiple=0.25,
+    width_multiple=0.50,
     backbone=dict(
         type='EfficientRep',
         num_repeats=[1, 6, 12, 18, 6],
@@ -47,5 +47,5 @@ data_aug = dict(
     flipud=0.00856,
     fliplr=0.5,
     mosaic=1.0,
-    mixup=0.243
+    mixup=0.243,
 )

@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/malika/foxy_ws/install/turtlebot3_gazebo/include/**",
+        "/home/malika/foxy_ws/install/turtlebot3_fake_node/include/**",
+        "/home/malika/foxy_ws/install/realsense2_camera/include/**",
+        "/home/malika/foxy_ws/install/realsense2_camera_msgs/include/**",
+        "/opt/ros/foxy/include/**",
+        "/home/malika/foxy_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/malika/foxy_ws/src/robot_simulations/turtlebot3_simulations/turtlebot3_fake_node/include/**",
+        "/home/malika/foxy_ws/src/robot_simulations/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/malika/foxy_ws/src/ros1_bridge/include/**",
+        "/home/malika/foxy_ws/src/turtlebot3/turtlebot3_node/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
