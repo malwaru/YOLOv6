@@ -1,6 +1,8 @@
 # YOLOv6
 ## Introduction
 
+This brnahc has a version of YOLOv6 as a package and made it possible to use with ROS2 messages 
+
 YOLOv6 is a single-stage object detection framework dedicated to industrial applications, with hardware-friendly efficient design and high performance.
 
 <img src="assets/picture.png" width="800">
